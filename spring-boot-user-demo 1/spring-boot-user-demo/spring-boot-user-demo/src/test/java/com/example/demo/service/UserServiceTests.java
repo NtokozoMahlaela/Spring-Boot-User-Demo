@@ -8,20 +8,20 @@ public class UserServiceTests {
     @Test
     public void testAddUser() {
         UserService userService = new UserServiceImpl(new FakeRepo());
-        userService.addUser("Tsakane", "Makhubele");
+        userService.addUser("Ntokozo", "Mahlaela");
     }
 
     @Test
     public void testGetUser() {
         UserServiceImpl service = new UserServiceImpl(new FakeRepo());
-        service.addUser("Gabaza", "Makhubele");
+        service.addUser("Musa", "Ndima");
         service.getUser(1);
     }
 
     @Test
     public void testRemoveUser() {
         UserServiceImpl service = new UserServiceImpl(new FakeRepo());
-        service.addUser("Zanele", "Makhubele");
+        service.addUser("Tshidi", "Mkhwanazi");
         service.removeUser(1);
     }
 }
