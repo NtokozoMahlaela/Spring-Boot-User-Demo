@@ -1,5 +1,4 @@
 #Spring Boot User Demo 
-
 #Overview
 
 This is a Spring Boot application demonstrating basic user management functionality. The project provides a foundation for building web applications with Spring Boot, including web MVC architecture and RESTful endpoints.
