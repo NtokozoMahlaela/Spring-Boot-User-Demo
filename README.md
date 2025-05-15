@@ -1,8 +1,11 @@
-Spring Boot User Demo 
-Overview
+#Spring Boot User Demo 
+
+#Overview
+
 This is a Spring Boot application demonstrating basic user management functionality. The project provides a foundation for building web applications with Spring Boot, including web MVC architecture and RESTful endpoints.
 
-Prerequisites
+#Prerequisites
+
 Before running this project, ensure you have the following installed:
 
 Java Development Kit (JDK) 17 or later
@@ -13,7 +16,8 @@ Your favorite IDE (IntelliJ IDEA, Eclipse, or VS Code recommended)
 
 Internet connection (for downloading dependencies)
 
-Project Structure
+#Project Structure
+
 spring-boot-user-demo/
 ├── src/
 │   ├── main/
@@ -30,7 +34,7 @@ spring-boot-user-demo/
 ├── gradlew.bat                # Gradle wrapper for Windows
 └── README.md                  # This file
 
-Getting Started
+#Getting Started
 1. Clone the Repository
 git clone (https://github.com/NtokozoMahlaela/Spring-Boot-User-Demo.git)
 cd spring-boot-user-demo
@@ -52,7 +56,7 @@ Swagger UI (if configured): http://localhost:8080/swagger-ui.html
 
 Actuator endpoints: http://localhost:8080/actuator/health
 
-Dependencies
+#Dependencies
 The project uses the following main dependencies (managed by Spring Boot):
 
 Spring Boot Starter Web: For building web applications
@@ -63,7 +67,7 @@ Spring Boot Starter Data JPA: For database access (if added later)
 
 H2 Database: In-memory database (if added later)
 
-Configuration
+#Configuration
 The application can be configured via application.properties or application.yml in the src/main/resources directory. Common configurations include:
 
 Server port: server.port
@@ -72,13 +76,13 @@ Database connection: spring.datasource.*
 
 JPA properties: spring.jpa.*
 
-Testing
+#Testing
 To run tests:
 
 bash
 ./gradlew test
 
-Troubleshooting
+#Troubleshooting
 If you encounter the build error about unable to delete directories:
 
 Try Removing the binary first:
@@ -98,7 +102,7 @@ bash
 ./gradlew --stop
 Ensure no other processes are locking files (especially on Windows)
 
-Contact
+#Contact
 For questions or support, please contact:
 
 Ntokozo Mahlaela
