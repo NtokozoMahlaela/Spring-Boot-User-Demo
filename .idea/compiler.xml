@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="spring-boot-user-demo" target="17" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.example.spring-boot-user-demo" options="-parameters" />
+      <module name="com.example.spring-boot-user-demo.main" options="-parameters" />
+      <module name="com.example.spring-boot-user-demo.test" options="-parameters" />
       <module name="spring-boot-user-demo" options="-parameters" />
       <module name="spring-boot-user-demo.main" options="-parameters" />
       <module name="spring-boot-user-demo.test" options="-parameters" />
