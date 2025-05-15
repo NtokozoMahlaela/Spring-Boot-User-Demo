@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.service.UserServiceTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-15T07:42:16" hostname="DESKTOP-KVK18ND" time="0.057">
+<testsuite name="com.example.demo.service.UserServiceTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-15T09:41:14" hostname="DESKTOP-KVK18ND" time="0.05">
   <properties/>
-  <testcase name="testAddUser()" classname="com.example.demo.service.UserServiceTests" time="0.046"/>
-  <testcase name="testGetUser()" classname="com.example.demo.service.UserServiceTests" time="0.002"/>
-  <testcase name="testRemoveUser()" classname="com.example.demo.service.UserServiceTests" time="0.004"/>
+  <testcase name="testAddUser()" classname="com.example.demo.service.UserServiceTests" time="0.036"/>
+  <testcase name="testGetUser()" classname="com.example.demo.service.UserServiceTests" time="0.006"/>
+  <testcase name="testRemoveUser()" classname="com.example.demo.service.UserServiceTests" time="0.003"/>
   <system-out><![CDATA[Ntokozo added with ID: 1
 Musa added with ID: 2
 User not found
