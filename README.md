@@ -1,111 +1,73 @@
-#Spring Boot User Demo 
-#Overview
+Spring Boot User Management Demo
+📌 Overview
+This is a simple Spring Boot demo application that manages user data in-memory, following the MVC architecture. It demonstrates the basic implementation of models, services, repositories, and unit testing within a Spring Boot project.
 
-This is a Spring Boot application demonstrating basic user management functionality. The project provides a foundation for building web applications with Spring Boot, including web MVC architecture and RESTful endpoints.
+This project is ideal for learning or demonstrating:
 
-#Prerequisites
+Spring Boot project structure
 
-Before running this project, ensure you have the following installed:
+Service and repository layers
 
-Java Development Kit (JDK) 17 or later
+Unit testing with JUnit
 
-Gradle 8.4 or compatible version
+Gradle-based project setup
 
-Your favorite IDE (IntelliJ IDEA, Eclipse, or VS Code recommended)
+🚀 Getting Started
+Prerequisites
+Ensure the following are installed:
 
-Internet connection (for downloading dependencies)
+Java 17+
 
-#Project Structure
+Gradle
 
-spring-boot-user-demo/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/demo/
-│   │   │   ├── controller/    # Contains web controllers
-│   │   │   ├── model/         # Contains data models/entities
-│   │   │   ├── repo/          # Contains repository interfaces
-│   │   │   ├── service/       # Contains business logic
-│   │   │   └── DemoApplication.java  # Main application class
-│   │   └── resources/         # Contains configuration files
-│   └── test/                  # Contains test classes
-├── build.gradle               # Project build configuration
-├── gradlew                    # Gradle wrapper for Unix systems
-├── gradlew.bat                # Gradle wrapper for Windows
-└── README.md                  # This file
+Git (optional)
 
-#Getting Started
-1. Clone the Repository
+Clone the Repository
+bash
+Copy
+Edit
 git clone (https://github.com/NtokozoMahlaela/Spring-Boot-User-Demo.git)
-cd spring-boot-user-demo
+▶️ Running the Application
+Use the Gradle wrapper to run the application:
 
-2. Build the Project
-Using Gradle wrapper:
-# For Windows
-gradlew.bat build
-
-3. Run the Application
 bash
-# Run with Gradle
+Copy
+Edit
 ./gradlew bootRun
+Once started, the application will be accessible at http://localhost:8080 (default port).
 
-4. Access the Application
-Once running, you can access:
-
-Swagger UI (if configured): http://localhost:8080/swagger-ui.html
-
-Actuator endpoints: http://localhost:8080/actuator/health
-
-#Dependencies
-The project uses the following main dependencies (managed by Spring Boot):
-
-Spring Boot Starter Web: For building web applications
-
-Spring Boot Starter Test: For testing support
-
-Spring Boot Starter Data JPA: For database access (if added later)
-
-H2 Database: In-memory database (if added later)
-
-#Configuration
-The application can be configured via application.properties or application.yml in the src/main/resources directory. Common configurations include:
-
-Server port: server.port
-
-Database connection: spring.datasource.*
-
-JPA properties: spring.jpa.*
-
-#Testing
-To run tests:
+🧪 Running Tests
+To execute the unit tests:
 
 bash
+Copy
+Edit
 ./gradlew test
+The test results will be available in the build/reports/tests/test/index.html file.
 
-#Troubleshooting
-If you encounter the build error about unable to delete directories:
-
-Try Removing the binary first:
+Trouble shooting: First remove the binary
 powershell
-# Specific path removal 
 Remove-Item -Recurse -Force 'C:\Users\giles\OneDrive\Documents\Springboot project\spring-boot-user-demo\spring-boot-user-demo\build\test-results\test\binary'
 
-# More general approach 
-Remove-Item -Recurse -Force "$env:USERPROFILE\OneDrive\Documents\Springboot project\spring-boot-user-demo\spring-boot-user-demo\build"
+🧱 Project Structure
+Layer	Component	Description
+Model	User.java	Represents the User entity
+Repository	FakeRepo.java	In-memory user storage implementation
+Service	UserServiceImpl.java	Business logic for user operations
+Tests	UserServiceTests.java	Unit tests for the service layer
 
-If that doesnt work try Cleaning first:
-bash
-./gradlew clean bootRun
-Stop any running Gradle daemons:
+📂 Technologies Used
+Java 17
 
-bash
-./gradlew --stop
-Ensure no other processes are locking files (especially on Windows)
+Spring Boot
 
-#Contact
-For questions or support, please contact:
+Gradle
 
+JUnit 5
+
+In-memory data structure (no database)
+
+✍️ Author
 Ntokozo Mahlaela
+Email: Ntokozomokoena07@gmail.com
 
-Email: Ntokozomahlaela@gmail.com
-
-GitHub: NtokozoMahlaela
